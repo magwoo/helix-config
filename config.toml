@@ -1,0 +1,42 @@
+theme = "magwoo"
+
+[editor]
+line-number = "relative"
+bufferline = "always" 
+mouse = false
+idle-timeout = 100
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT" 
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+"J" = ["scroll_down", "scroll_down", "scroll_down"]
+"K" = ["scroll_up", "scroll_up", "scroll_up"]
+"{" = "half_page_down"
+"}" = "half_page_up"
+"+" = "goto_next_buffer"
+"_" = "goto_previous_buffer"
+H = "goto_first_nonwhitespace"
+L = "goto_line_end"
+
+[keys.normal.space]
+"q" = ":bc"
+
+[keys.normal.g]
+"]" = "goto_next_buffer"
+"[" = "goto_previous_buffer"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.file-picker]
+hidden = false

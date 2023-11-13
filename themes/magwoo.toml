@@ -1,0 +1,7 @@
+inherits = "catppuccin_mocha"
+
+"ui.background.separator" = "light-yellow"
+"ui.selection" = { bg = "#2c2c39" }
+"diagnostic.hint" = { underline = { color = "blue", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "green", style = "dotted" } }
+"hint" = "blue"
