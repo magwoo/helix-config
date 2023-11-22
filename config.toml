@@ -1,10 +1,11 @@
-theme = "magwoo"
+theme = "autumn"
 
 [editor]
 line-number = "relative"
 bufferline = "always" 
 mouse = false
 idle-timeout = 100
+completion-trigger-len = 1
 
 [editor.statusline]
 mode.normal = "NORMAL"
@@ -37,6 +38,3 @@ select = "underline"
 [editor.lsp]
 display-messages = true
 display-inlay-hints = true
-
-[editor.file-picker]
-hidden = false
