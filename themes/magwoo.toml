@@ -1,7 +1,3 @@
-inherits = "catppuccin_mocha"
+inherits = "sonokai"
 
-"ui.background.separator" = "light-yellow"
-"ui.selection" = { bg = "#2c2c39" }
-"diagnostic.hint" = { underline = { color = "blue", style = "dotted" } }
-"diagnostic.info" = { underline = { color = "green", style = "dotted" } }
-"hint" = "blue"
+"ui.virtual.inlay-hint" = "gray"
