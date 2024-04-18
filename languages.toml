@@ -2,6 +2,14 @@
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer", "tailwindcss-ls"]
+
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 
