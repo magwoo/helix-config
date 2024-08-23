@@ -2,10 +2,8 @@
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
-[[language]]
-name = "html"
-language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
 
+# Rust
 [[language]]
 name = "rust"
 language-servers = ["rust-analyzer", "tailwindcss-ls"]
@@ -14,3 +12,29 @@ language-servers = ["rust-analyzer", "tailwindcss-ls"]
 command = "clippy"
 
 
+# Web
+[language-server.emmet-ls]
+command = "emmet-ls"
+args = [ "--stdio" ]
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server", "tailwindcss-ls", "emmet-ls"]
+formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+auto-format = true
+
+[[language]]
+name = "javascript"
+formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server", "tailwindcss-ls", "emmet-ls"]
+formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+auto-format = true
