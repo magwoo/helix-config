@@ -13,3 +13,4 @@ language-servers = ["rust-analyzer", "tailwindcss-ls"]
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 
+

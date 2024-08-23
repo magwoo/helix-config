@@ -1,6 +1,7 @@
-theme = "magwoo_sonokai"
+# theme = "magwoo_sonokai"
 # theme = "magwoo_autumn"
 # theme = "magwoo_monokai"
+theme = "gruvbox_dark_hard"
 
 [editor]
 line-number = "relative"
