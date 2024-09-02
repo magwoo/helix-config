@@ -13,6 +13,17 @@ command = "clippy"
 
 
 # Web
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+config = {typescript = {tsdk = "/opt/homebrew/lib/node_modules/typescript/lib"}, environment = "node"}
+
+[[language]]
+name = "astro"
+language-servers = [ "astro-ls", "tailwindcss-ls" ]
+formatter = { command = "prettier", args = [ "--parser", "astro", "--plugin", "prettier-plugin-astro" ] }
+auto-format = true
+
 [language-server.emmet-ls]
 command = "emmet-ls"
 args = [ "--stdio" ]
