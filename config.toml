@@ -42,6 +42,9 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.soft-wrap]
+enable = true
+
 [editor.lsp]
 display-messages = true
 display-inlay-hints = true
