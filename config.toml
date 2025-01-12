@@ -1,7 +1,7 @@
 # theme = "magwoo_sonokai"
-# theme = "magwoo_autumn"
+theme = "magwoo_autumn"
 # theme = "magwoo_monokai"
-theme = "gruvbox_dark_hard"
+# theme = "magwoo_gruvbox"
 
 [editor]
 line-number = "relative"
@@ -9,6 +9,10 @@ bufferline = "always"
 mouse = false
 idle-timeout = 100
 completion-trigger-len = 1
+end-of-line-diagnostics = "error"
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
 
 [editor.file-picker]
 hidden = false

@@ -1,6 +1,4 @@
-inherits = "monokai_pro_octagon"
-
-"ui.virtual.inlay-hint" = "gray"
+inherits = "gruvbox_dark_hard"
 
 # transparent
 "ui.background" = {}

@@ -1,2 +1,6 @@
 inherits = "autumn"
 
+# transparent
+"ui.background" = {}
+"ui.gutter" = {}
+"ui.linenr" = { fg = "gray" }

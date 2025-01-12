@@ -1,3 +1,8 @@
 inherits = "sonokai"
 
 "ui.virtual.inlay-hint" = "gray"
+
+# transparent
+"ui.background" = {}
+"ui.gutter" = {}
+"ui.linenr" = { fg = "gray" }
