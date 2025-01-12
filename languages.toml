@@ -13,20 +13,15 @@ command = "clippy"
 
 
 # Web
-[language-server.astro-ls]
-command = "astro-ls"
-args = ["--stdio"]
-config = {typescript = {tsdk = "/opt/homebrew/lib/node_modules/typescript/lib"}, environment = "node"}
-
-[[language]]
-name = "astro"
-language-servers = [ "astro-ls", "tailwindcss-ls" ]
-formatter = { command = "prettier", args = [ "--parser", "astro", "--plugin", "prettier-plugin-astro" ] }
-auto-format = true
-
 [language-server.emmet-ls]
 command = "emmet-ls"
 args = [ "--stdio" ]
+
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server", "tailwindcss-ls", "emmet-ls"]
+formatter = { command = "prettier", args = [ "--parser", "html" ] }
+auto-format = true
 
 [[language]]
 name = "jsx"
@@ -49,3 +44,15 @@ auto-format = true
 name = "typescript"
 formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
 auto-format = true
+
+[[language]]
+name = "vue"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "vue"] }
+language-servers = ["typescript-language-server"]
+
+[[language-server.typescript-language-server.config.plugins]]
+name = "@vue/typescript-plugin"
+location = "/opt/homebrew/lib/node_modules/@vue/language-server"
+languages = ["vue"]
+
