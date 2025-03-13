@@ -1,6 +1,6 @@
 # theme = "magwoo_sonokai"
-theme = "magwoo_autumn"
-# theme = "magwoo_monokai"
+# theme = "magwoo_autumn"
+theme = "magwoo_monokai"
 # theme = "magwoo_gruvbox"
 
 [editor]
