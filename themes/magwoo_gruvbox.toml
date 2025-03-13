@@ -1,4 +1,4 @@
-inherits = "gruvbox_dark_hard"
+inherits = "gruvbox"
 
 # transparent
 "ui.background" = {}
